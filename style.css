@@ -338,3 +338,52 @@
   text-decoration: none;
   margin: 0 10px;
 }
+@media (max-width: 576px) {
+  .menu {
+    display: none; 
+  }
+
+  .menu__icons {
+    display: block; 
+  }
+
+  .slider {
+    display: block; 
+    height: 300px; 
+  }
+
+  .slider img {
+    height: 300px; 
+  }
+  
+  .btn__purple{
+    width: 100%;
+  }
+  .col-6{
+    width: 30%;
+  }
+  
+  .amigrumi__card {
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px; 
+    max-width: 100%; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+  }
+.col-5{
+  display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px; 
+    max-width: 100%; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+.filte{
+  display: none;
+}
+  .filter__background {
+    width: 100%; 
+  }
+}

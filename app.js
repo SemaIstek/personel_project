@@ -89,6 +89,11 @@ const createAmigrumiItemsHtml = () => {
 
   amigrumiListEl.innerHTML = amigrumiListHtml;
 };
+window.onload = () => {
+  createAmigrumiItemsHtml();
+  createAmigrumiTypesHtml(); 
+  createAmigrumiItemsHtml(); 
+};
 
 const AMIGRUMI_TYPES = {
   ALL: "ALL",
