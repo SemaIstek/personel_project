@@ -78,16 +78,19 @@
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
+  height: 500px;
+  
 }
 
 .slider img {
-  height: 600px;
+  height: 500px;
+  width: 450px;
 }
 
 .store {
   width: 80%;
   margin-left: 10%;
+    
 }
 
 .amigrumi__card {
@@ -99,14 +102,14 @@
 
 .amigrumi__card img {
   height: 300px;
+  transform: scale(1);
+  
 }
 
 .amigrumi__card img:hover {
-  height: 400px;
-  width: 600px;
+  transform: scale(1.5);
   cursor: pointer;
 }
-
 
 .fos {
   font-family: "Open Sans", sans-serif;
@@ -161,6 +164,7 @@
 .btn__purple:hover {
   background-color: var(--purple);
   color: white;
+  font-size: 1.5rem;
 }
 
 .filter__background {
@@ -325,8 +329,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 10%;
-  background-color: #f10a0a; 
+  width: 5%;
   border-radius: 2px;
   color: #f5efef; 
   padding: 10px 0;
@@ -334,9 +337,11 @@
 }
 
 .footer a {
-  color: rgb(177, 17, 17); 
   text-decoration: none;
   margin: 0 10px;
+}
+footer:hover{
+  transform: scale(1.5);
 }
 @media (max-width: 576px) {
   .menu {
@@ -372,18 +377,31 @@
     overflow-x: auto; 
     white-space: nowrap; 
   }
-.col-5{
-  display: grid;
+ .col-5{
+    display: grid;
     grid-template-columns: repeat(1, 1fr); 
     gap: 20px; 
     max-width: 100%; 
     overflow-x: auto; 
     white-space: nowrap; 
-}
-.filte{
+ }
+ .filter{
   display: none;
-}
-  .filter__background {
+ }
+ .filter__background {
     width: 100%; 
   }
+}
+
+a{
+  text-decoration:none;
+  color : var(--gray);
+}
+
+a:hover{
+  color:white;
+}
+
+a:visited{
+  color: var(--gray);
 }
