@@ -79,7 +79,7 @@ const createAmigrumiItemsHtml = () => {
               : ""
           }
         </div>
-        <button class="btn__purple" onclick="addBookToBasket(${
+        <button class="btn__purple" onclick="addAmigurumiToBasket(${
           amigrumi.id
         })">ADD BASKET</button>
       </div>
@@ -92,7 +92,7 @@ const createAmigrumiItemsHtml = () => {
 window.onload = () => {
   createAmigrumiItemsHtml();
   createAmigrumiTypesHtml(); 
-  createAmigrumiItemsHtml(); 
+  
 };
 
 const AMIGRUMI_TYPES = {
@@ -135,7 +135,7 @@ const filterAmigrumi = (filterEl) => {
   createAmigrumiItemsHtml();
 };
 
-const addBookToBasket = (amigrumiId) => {
+const addAmigurumiToBasket = (amigrumiId) => {
   let findedAmigrumi = amigrumiList.find((amigrumi) => amigrumi.id == amigrumiId);
   if (findedAmigrumi) {
     const basketAlreadyIndex = basketList.findIndex(
